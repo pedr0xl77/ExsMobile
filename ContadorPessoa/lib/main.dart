@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 
 void main() {
   runApp(const MyApp());
@@ -84,7 +84,7 @@ class _HomePageState extends State<HomePage> {
                   onPressed: isEmpty ? null : decrement,
                   style: TextButton.styleFrom(
                     // Define a cor de fundo apenas para o estado ativo
-                    backgroundColor: Colors.blue.withOpacity(0.8),
+                    backgroundColor: Colors.blue.withValues(alpha: 0.8),
                     // Define a cor do texto/ícone interno
                     foregroundColor: Colors.black,
                     fixedSize: const Size(100, 100),
@@ -101,7 +101,7 @@ class _HomePageState extends State<HomePage> {
                 TextButton(
                   onPressed: isFull ? null : increment,
                   style: TextButton.styleFrom(
-                    backgroundColor: Colors.blue.withOpacity(0.8),
+                    backgroundColor: Colors.blue.withValues(alpha: 0.8),
                     foregroundColor: Colors.black,
                     fixedSize: const Size(100, 100),
                     shape: RoundedRectangleBorder(
